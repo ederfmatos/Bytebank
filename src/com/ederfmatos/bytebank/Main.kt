@@ -16,7 +16,7 @@ fun main() {
     )
 
     println(employee)
-    println("The bonus is ${employee.putBonus()}")
+    println("The bonus is ${employee.putBonus}")
 
     val manager = Manager(
             name = "Eder",
@@ -26,7 +26,7 @@ fun main() {
     )
 
     println(manager)
-    println("The bonus is ${manager.putBonus()} of manager ${manager.name}")
+    println("The bonus is ${manager.putBonus} of manager ${manager.name}")
 
     val director = Director(
             name = "Eder",
@@ -37,5 +37,5 @@ fun main() {
     )
 
     println(director)
-    println("The bonus is ${director.putBonus()} of directo ${director.name}")
+    println("The bonus is ${director.putBonus} of director ${director.name}")
 }

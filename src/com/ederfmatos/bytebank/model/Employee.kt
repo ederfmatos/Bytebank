@@ -6,9 +6,8 @@ open class Employee(
         val salary: Double
 ) {
 
-    fun putBonus(): Double {
-        return salary * 0.1;
-    }
+    open val putBonus: Double
+        get() = salary * 0.1
 
     override fun toString(): String {
         return "Employee(name='$name', cpf='$cpf', salary=$salary)"

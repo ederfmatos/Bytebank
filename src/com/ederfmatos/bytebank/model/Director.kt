@@ -12,6 +12,9 @@ class Director(
         return this.password == password
     }
 
+    override val putBonus: Double
+        get() = salary * (plr / 8) * 0.01
+
     override fun toString(): String {
         return "Director(password='$password') ${super.toString()}"
     }
