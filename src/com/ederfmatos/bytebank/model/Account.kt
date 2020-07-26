@@ -47,7 +47,7 @@ class Account(
     }
 
     override fun toString(): String {
-        return "com.ederfmatos.bytebank.Account(owner='$owner', number=$number, balance=$balance)"
+        return "Account(owner='$owner', number=$number, balance=$balance)"
     }
 
 }
