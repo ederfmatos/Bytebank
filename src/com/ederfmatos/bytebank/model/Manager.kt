@@ -11,11 +11,11 @@ class Manager(
         return this.password == password
     }
 
-    override val putBonus: Double
-        get() = salary * 0.2
+    override val putBonus: Double = super.putBonus + salary
 
     override fun toString(): String {
-        return "Manager(password='$password') ${super.toString()}"
+        return "Manager(password='$password', putBonus=$putBonus, ${super.toString()})"
     }
+
 
 }
