@@ -38,4 +38,12 @@ fun main() {
 
     println(director)
     println("The bonus is ${director.putBonus} of director ${director.name}")
+
+    val calculator = CalculatorPutBonus()
+    calculator
+            .register(manager)
+            .register(director)
+            .register(employee)
+
+    println("O total calculado foi de ${calculator.total}")
 }
