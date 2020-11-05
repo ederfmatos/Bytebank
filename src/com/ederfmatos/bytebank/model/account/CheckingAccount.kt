@@ -7,7 +7,10 @@ class CheckingAccount(owner: String, number: Int) : Account(
 
     override fun withdraw(value: Double) {
         val valueWithTax: Double = value + 0.1
-        super.withdraw(valueWithTax)
+
+        if (this.balance >= valueWithTax) {
+            this.balance -= value
+        }
     }
 
 }

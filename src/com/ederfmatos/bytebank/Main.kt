@@ -1,14 +1,14 @@
 package com.ederfmatos.bytebank
 
-import com.ederfmatos.bytebank.functions.testEmployees
+import com.ederfmatos.bytebank.functions.testDifferentAccounts
 
 fun main() {
-//    println("Hello World")
+    println("Hello World")
 
 //    forLoops()
 
-    testEmployees()
+//    testEmployees()
 
-//    testDifferentAccounts()
+    testDifferentAccounts()
 }
 

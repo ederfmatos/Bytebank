@@ -1,12 +1,12 @@
 package com.ederfmatos.bytebank.model.account
 
-open class Account(
-    private val owner: String,
-    private val number: Int
+abstract class Account(
+        protected val owner: String,
+        protected val number: Int
 ) {
 
     var balance = 0.0
-        private set
+        protected set
 
     fun deposit(price: Double) {
         if (price < 0) {
@@ -17,19 +17,7 @@ open class Account(
         this.balance += price
     }
 
-    open fun withdraw(value: Double) {
-        if (value > balance) {
-            println("Não é possivel realizar o saque para a conta de $owner, pois o saldo em conta é de $balance e o valor que está sendo tentado sacar é de $value")
-            return
-        }
-
-        if (value < 0) {
-            println("Não é possivel realizar um saque de um valor negativo")
-            return
-        }
-
-        this.balance -= value
-    }
+    abstract fun withdraw(value: Double)
 
     fun transfer(value: Double, destiny: Account) {
         if (value > balance) {
