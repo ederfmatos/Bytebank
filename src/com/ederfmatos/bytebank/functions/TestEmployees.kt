@@ -1,12 +1,12 @@
 package com.ederfmatos.bytebank.functions
 
 import com.ederfmatos.bytebank.CalculatorPutBonus
+import com.ederfmatos.bytebank.model.Analyst
 import com.ederfmatos.bytebank.model.Director
-import com.ederfmatos.bytebank.model.Employee
 import com.ederfmatos.bytebank.model.Manager
 
 fun testEmployees() {
-    val employee = Employee(
+    val employee = Analyst(
             name = "Eder",
             cpf = "123456789",
             salary = 2500.0
