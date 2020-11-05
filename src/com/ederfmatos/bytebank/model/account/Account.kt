@@ -1,6 +1,6 @@
-package com.ederfmatos.bytebank.model
+package com.ederfmatos.bytebank.model.account
 
-class Account(
+open class Account(
     private val owner: String,
     private val number: Int
 ) {
@@ -17,7 +17,7 @@ class Account(
         this.balance += price
     }
 
-    fun withdraw(value: Double) {
+    open fun withdraw(value: Double) {
         if (value > balance) {
             println("Não é possivel realizar o saque para a conta de $owner, pois o saldo em conta é de $balance e o valor que está sendo tentado sacar é de $value")
             return

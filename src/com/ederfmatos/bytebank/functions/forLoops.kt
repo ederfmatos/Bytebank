@@ -1,6 +1,6 @@
 package com.ederfmatos.bytebank.functions
 
-import com.ederfmatos.bytebank.model.Account
+import com.ederfmatos.bytebank.model.account.Account
 
 fun forLoops() {
     for (i in 1 downTo 0 step 3) {

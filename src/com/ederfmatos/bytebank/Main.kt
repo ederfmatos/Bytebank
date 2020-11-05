@@ -1,49 +1,42 @@
 package com.ederfmatos.bytebank
 
-import com.ederfmatos.bytebank.model.Director
-import com.ederfmatos.bytebank.model.Employee
-import com.ederfmatos.bytebank.model.Manager
+import com.ederfmatos.bytebank.functions.forLoops
+import com.ederfmatos.bytebank.functions.testEmployees
+import com.ederfmatos.bytebank.model.account.Account
+import com.ederfmatos.bytebank.model.account.CheckingAccount
+import com.ederfmatos.bytebank.model.account.SavingAccount
 
 fun main() {
-    println("Hello World")
+//    println("Hello World")
 
 //    forLoops()
 
-    val employee = Employee(
-            name = "Eder",
-            cpf = "123456789",
-            salary = 2500.0
-    )
+//    testEmployees()
 
-    println(employee)
-    println("The bonus is ${employee.putBonus}")
+    val checkingAccount: Account = CheckingAccount(owner = "Eder", number = 1500)
+    val savingAccount: Account = SavingAccount(owner = "Japoner", number = 1600)
 
-    val manager = Manager(
-            name = "Eder",
-            cpf = "123456789",
-            salary = 2500.0,
-            password = "123456"
-    )
+    checkingAccount.deposit(1000.0)
+    savingAccount.deposit(1000.0)
 
-    println(manager)
-    println("The bonus is ${manager.putBonus} of manager ${manager.name}")
 
-    val director = Director(
-            name = "Eder",
-            cpf = "0987654321",
-            salary = 5000.0,
-            password = "123456789",
-            plr = 150.0
-    )
+    println("Saldo antes saque da conta corrente $checkingAccount")
+    println("Saldo antes saque da conta poupança $savingAccount")
+    println("____________________________________")
 
-    println(director)
-    println("The bonus is ${director.putBonus} of director ${director.name}")
+    checkingAccount.withdraw(100.0)
+    savingAccount.withdraw(100.0)
 
-    val calculator = CalculatorPutBonus()
-    calculator
-            .register(manager)
-            .register(director)
-            .register(employee)
+    println("Saldo após saque da conta corrente $checkingAccount")
+    println("Saldo após saque da conta poupança $savingAccount")
+    println("____________________________________")
 
-    println("O total calculado foi de ${calculator.total}")
+    checkingAccount.transfer(50.0, savingAccount)
+    println("Saldo após transferencia da conta corrente para conta poupança - conta corrente $checkingAccount")
+    println("Saldo após transferencia da conta corrente para conta poupança - conta poupança $savingAccount")
+    println("____________________________________")
+
+    savingAccount.transfer(51.0, checkingAccount)
+    println("Saldo após transferencia da conta poupança para conta corrente - conta corrente $checkingAccount")
+    println("Saldo após transferencia da conta poupança para conta corrente - conta poupança $savingAccount")
 }
