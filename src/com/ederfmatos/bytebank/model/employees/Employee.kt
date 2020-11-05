@@ -1,4 +1,4 @@
-package com.ederfmatos.bytebank.model
+package com.ederfmatos.bytebank.model.employees
 
 abstract class Employee(
         val name: String,
@@ -6,10 +6,7 @@ abstract class Employee(
         val salary: Double
 ) {
 
-    open val putBonus: Double
-        get() {
-            return salary * 0.1
-        }
+    abstract val putBonus: Double
 
     override fun toString(): String {
         return "Employee(name='$name', cpf='$cpf', salary=$salary)"

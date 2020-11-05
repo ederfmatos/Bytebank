@@ -1,9 +1,9 @@
 package com.ederfmatos.bytebank.functions
 
 import com.ederfmatos.bytebank.CalculatorPutBonus
-import com.ederfmatos.bytebank.model.Analyst
-import com.ederfmatos.bytebank.model.Director
-import com.ederfmatos.bytebank.model.Manager
+import com.ederfmatos.bytebank.model.employees.Analyst
+import com.ederfmatos.bytebank.model.employees.Director
+import com.ederfmatos.bytebank.model.employees.Manager
 
 fun testEmployees() {
     val employee = Analyst(

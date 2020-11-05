@@ -1,4 +1,4 @@
-package com.ederfmatos.bytebank.model
+package com.ederfmatos.bytebank.model.employees
 
 class Director(
         name: String,
@@ -12,7 +12,9 @@ class Director(
         return this.password == password
     }
 
-    override val putBonus: Double = super.putBonus + salary + plr
+    override val putBonus: Double
+        get() = salary * 0.1 + salary + plr
+
 
     override fun toString(): String {
         return "Director(password='$password', plr='$plr') ${super.toString()}"

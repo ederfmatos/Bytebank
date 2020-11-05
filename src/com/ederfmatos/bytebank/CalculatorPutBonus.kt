@@ -1,6 +1,6 @@
 package com.ederfmatos.bytebank
 
-import com.ederfmatos.bytebank.model.Employee
+import com.ederfmatos.bytebank.model.employees.Employee
 
 class CalculatorPutBonus {
 

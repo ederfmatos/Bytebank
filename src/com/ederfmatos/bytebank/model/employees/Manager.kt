@@ -1,4 +1,4 @@
-package com.ederfmatos.bytebank.model
+package com.ederfmatos.bytebank.model.employees
 
 class Manager(
         name: String,
@@ -11,7 +11,8 @@ class Manager(
         return this.password == password
     }
 
-    override val putBonus: Double = super.putBonus + salary
+    override val putBonus: Double
+        get() = salary * 0.1 + salary
 
     override fun toString(): String {
         return "Manager(password='$password', putBonus=$putBonus, ${super.toString()})"
