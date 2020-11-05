@@ -1,13 +1,15 @@
 package com.ederfmatos.bytebank.model.employees
 
+import com.ederfmatos.bytebank.Authentic
+
 abstract class EmployeeAdmin(
         name: String,
         cpf: String,
         salary: Double,
-        private val password: String
-) : Employee(name = name, cpf = cpf, salary = salary) {
+        protected val password: String
+) : Employee(name = name, cpf = cpf, salary = salary), Authentic {
 
-    fun authenticate(password: String): Boolean {
+    override fun authenticate(password: String): Boolean {
         return this.password == password
     }
 

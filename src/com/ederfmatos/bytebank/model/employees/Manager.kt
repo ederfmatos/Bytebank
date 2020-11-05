@@ -4,7 +4,7 @@ class Manager(
         name: String,
         cpf: String,
         salary: Double,
-        private val password: String
+        password: String
 ) : EmployeeAdmin(name = name, cpf = cpf, salary = salary, password = password) {
 
     override val putBonus: Double
