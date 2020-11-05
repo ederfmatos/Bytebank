@@ -5,18 +5,13 @@ class Manager(
         cpf: String,
         salary: Double,
         private val password: String
-) : Employee(name = name, cpf = cpf, salary = salary) {
-
-    fun authenticate(password: String): Boolean {
-        return this.password == password
-    }
+) : EmployeeAdmin(name = name, cpf = cpf, salary = salary, password = password) {
 
     override val putBonus: Double
         get() = salary * 0.1 + salary
 
     override fun toString(): String {
-        return "Manager(password='$password', putBonus=$putBonus, ${super.toString()})"
+        return "Manager(putBonus=$putBonus, ${super.toString()})"
     }
-
 
 }
