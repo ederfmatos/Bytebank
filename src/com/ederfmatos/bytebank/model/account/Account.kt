@@ -2,9 +2,6 @@ package com.ederfmatos.bytebank.model.account
 
 import com.ederfmatos.bytebank.model.Customer
 
-var totalContas = 0
-    private set
-
 abstract class Account(
         protected val owner: Customer,
         protected val number: Int
@@ -14,7 +11,14 @@ abstract class Account(
         protected set
 
     init {
-        totalContas++
+        incrementTotal()
+    }
+
+    companion object {
+        var total: Int = 0
+            private set
+
+        fun incrementTotal() = total++
     }
 
     fun deposit(price: Double) {
