@@ -7,4 +7,8 @@ class Address(
         var city: String = "",
         var postalCode: String = "",
         var complement: String = ""
-)
+) {
+    override fun toString(): String {
+        return "Address(street='$street', neighborhood='$neighborhood', number=$number, city='$city', postalCode='$postalCode', complement='$complement')"
+    }
+}

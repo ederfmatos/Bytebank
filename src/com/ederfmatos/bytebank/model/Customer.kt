@@ -14,7 +14,7 @@ class Customer(
     }
 
     override fun toString(): String {
-        return "Customer(name='$name', cpf='$cpf', password='$password')"
+        return "Customer(name='$name', cpf='$cpf', address=$address)"
     }
 
 }
