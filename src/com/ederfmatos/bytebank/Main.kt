@@ -1,5 +1,6 @@
 package com.ederfmatos.bytebank
 
+import com.ederfmatos.bytebank.authentication.Authentic
 import com.ederfmatos.bytebank.functions.forLoops
 import com.ederfmatos.bytebank.functions.testAuthentication
 import com.ederfmatos.bytebank.functions.testDifferentAccounts
@@ -18,5 +19,6 @@ fun main() {
     testAuthentication()
 
     println("O número de contas criadas é de $totalContas")
+
 }
 

@@ -1,5 +1,6 @@
 package com.ederfmatos.bytebank.functions
 
+import com.ederfmatos.bytebank.authentication.Authentic
 import com.ederfmatos.bytebank.internal.InternalSystem
 import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.employees.Director
@@ -15,4 +16,14 @@ fun testAuthentication() {
     internalSystem.enter(manager, "1234")
     internalSystem.enter(director, "123456")
     internalSystem.enter(customer, "1234")
+
+    val fran  = object : Authentic {
+        val name: String = "fran"
+        val cpf: String = "12345678"
+        val password: String = "123456789"
+
+        override fun authenticate(password: String) = this.password == password
+    }
+
+    internalSystem.enter(fran, "123456789");
 }
