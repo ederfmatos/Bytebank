@@ -1,6 +1,6 @@
 package com.ederfmatos.bytebank.model
 
-import com.ederfmatos.bytebank.Authentic
+import com.ederfmatos.bytebank.authentication.Authentic
 
 class Customer(val name: String, val cpf: String, private val password: String) : Authentic {
 

@@ -1,4 +1,4 @@
-package com.ederfmatos.bytebank
+package com.ederfmatos.bytebank.authentication
 
 interface Authentic {
 

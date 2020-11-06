@@ -1,6 +1,6 @@
 package com.ederfmatos.bytebank.model.employees
 
-import com.ederfmatos.bytebank.Authentic
+import com.ederfmatos.bytebank.authentication.Authentic
 
 abstract class EmployeeAdmin(
         name: String,
