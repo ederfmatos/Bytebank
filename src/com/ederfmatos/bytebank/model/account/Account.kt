@@ -1,7 +1,9 @@
 package com.ederfmatos.bytebank.model.account
 
+import com.ederfmatos.bytebank.model.Customer
+
 abstract class Account(
-        protected val owner: String,
+        protected val owner: Customer,
         protected val number: Int
 ) {
 

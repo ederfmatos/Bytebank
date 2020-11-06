@@ -1,12 +1,14 @@
 package com.ederfmatos.bytebank.functions
 
+import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.account.SavingAccount
 
 fun forLoops() {
     for (i in 1 downTo 0 step 3) {
         println("")
 
-        val account = SavingAccount("Eder", 1095)
+        val customer = Customer(name = "Eder", cpf = "123456789", password = "123456")
+        val account = SavingAccount(customer, 1095)
         account.deposit(100.0)
 
 //        println(
@@ -21,8 +23,8 @@ fun forLoops() {
         account.withdraw(148.0)
         println(account)
 
-
-        val account2 = SavingAccount(number = 75, owner = "Toroxa")
+        val customer2 = Customer(name = "Toroxa", cpf = "123456789", password = "123456")
+        val account2 = SavingAccount(number = 75, owner = customer2)
         account.transfer(75.0, account2)
 
         println(account)

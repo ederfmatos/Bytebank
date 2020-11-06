@@ -1,12 +1,16 @@
 package com.ederfmatos.bytebank.functions
 
+import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.account.Account
 import com.ederfmatos.bytebank.model.account.CheckingAccount
 import com.ederfmatos.bytebank.model.account.SavingAccount
 
 fun testDifferentAccounts() {
-    val checkingAccount: Account = CheckingAccount(owner = "Eder", number = 1500)
-    val savingAccount: Account = SavingAccount(owner = "Japoner", number = 1600)
+    val customer = Customer(name = "Eder", cpf = "123456789", password = "123456")
+    val customer2 = Customer(name = "Japones", cpf = "123456789", password = "123456")
+
+    val checkingAccount: Account = CheckingAccount(owner = customer, number = 1500)
+    val savingAccount: Account = SavingAccount(owner = customer2, number = 1600)
 
     checkingAccount.deposit(1000.0)
     savingAccount.deposit(1000.0)

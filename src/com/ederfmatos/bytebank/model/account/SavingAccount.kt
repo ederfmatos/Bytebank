@@ -1,6 +1,8 @@
 package com.ederfmatos.bytebank.model.account
 
-class SavingAccount(owner: String, number: Int) : Account(
+import com.ederfmatos.bytebank.model.Customer
+
+class SavingAccount(owner: Customer, number: Int) : Account(
         owner = owner,
         number = number
 ) {
