@@ -50,3 +50,46 @@ class Customer(name: String) {
 
 }
 ```
+
+### Casting
+
+#### Is
+
+Para verificar se uma variável é uma instancia de outra utilizamos o "is"
+Exemplo:
+
+```kotlin
+fun print(value: Any) {
+    if (value is Customer) {
+    // ... Segue
+    }
+}
+``` 
+
+#### Cast
+
+Para realizar o cast de um variável podemos utilizar as seguintes formas
+Exemplo:
+
+```kotlin
+fun print(value: Any) {
+    val newValue: Customer = value as Customer
+    println(newValue) 
+
+    value as Customer
+    println(value) 
+}
+``` 
+
+#### SmartCast
+
+É possivel fazer a verificação de uma variavel com um tipo e logo em seguida já utiliza-la com cast implicito
+Exemplo:
+
+```kotlin
+fun print(value: Any) {
+    if (value is Customer) {
+        println(value.name)
+    }
+}
+``` 

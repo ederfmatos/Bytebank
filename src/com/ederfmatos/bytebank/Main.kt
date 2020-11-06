@@ -7,16 +7,16 @@ import com.ederfmatos.bytebank.functions.testEmployees
 import com.ederfmatos.bytebank.model.account.Account
 
 fun main() {
-    println("Hello World")
+//    println("Hello World")
 
-    forLoops()
+//    forLoops()
 
-    testEmployees()
+//    testEmployees()
 
-    testDifferentAccounts()
+//    testDifferentAccounts()
 
-    testAuthentication()
+//    testAuthentication()
 
-    println("O número de contas criadas é de ${Account.total}")
+//    println("O número de contas criadas é de ${Account.total}")
 }
 
