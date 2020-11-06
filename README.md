@@ -31,3 +31,22 @@ import com.ederfmatos.bytebank.model.auth.Customer as CustomerAuth
 val customer = Customer()
 val customerAuth = CustomerAuth()
 ```
+
+### Init
+
+Com o "init" podemos executar um trecho de código assim que uma instancia da classe for criada, indiferente do construtor
+Exemplo:
+
+```kotlin
+class Customer(name: String) {
+
+    constructor(name: String, age: Int): this(name = name) {
+
+    }
+    
+    init {
+        // Código
+    }
+
+}
+```
