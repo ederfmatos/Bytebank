@@ -126,3 +126,12 @@ try {
     null
  }
 ```
+
+#### When is an expression
+
+```kotlin
+val valorComTaxa: Double? = when {
+    valorRecebido != null -> valorRecebido + 0.1
+    else -> null
+}
+```
