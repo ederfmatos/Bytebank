@@ -116,3 +116,13 @@ try {
     null
  }
 ```
+
+#### If is an expression
+
+```kotlin
+ val value: Int? = if (value) { 
+    Integer.parseInt("1")
+ } else { 
+    null
+ }
+```
