@@ -93,3 +93,16 @@ fun print(value: Any) {
     }
 }
 ``` 
+
+
+#### Exceptions
+
+```kotlin
+try {
+
+} catch(e: Exception) {
+    e.printStackTrace()    
+} finally {
+
+}
+```
