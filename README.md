@@ -106,3 +106,13 @@ try {
 
 }
 ```
+
+#### Try is an expression
+
+```kotlin
+ val value: Int? = try { 
+    Integer.parseInt("1")
+ } catch(e:  NumberFormatException) { 
+    null
+ }
+```
