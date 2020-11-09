@@ -36,6 +36,8 @@
 	 9. [Verificar se nenhum valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
 	 10. [Filtrar array](#filtrar-array)<br>
 	 11. [Buscar o primeiro item de acordo com condição](#buscar-o-primeiro-item-de-acordo-com-condição)<br>
+	 12. [Criar Array de objetos](#criar-array-de-objetos)<br>
+	 13. [Map](#map)<br>
 	 
 
 ### Variáveis
@@ -367,4 +369,18 @@ val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
 println(ages.find { it >= 18 })
 
 // -> 26
+```
+
+#### Criar Array de objetos
+```kotlin
+fun bigDecimalArrayOf(vararg values: String): Array<BigDecimal> {
+    return Array(values.size){ index -> values[index].toBigDecimal() }
+}
+
+val salarios = bigDecimalArrayOf("1500.19", "4850.50", "3200.00", "4420.00", "3212.00")
+```
+
+#### Map
+```kotlin
+val salariosComAumento = salarios.map{ salario -> salario * aumento }.toTypedArray()
 ```
