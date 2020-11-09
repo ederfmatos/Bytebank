@@ -14,7 +14,7 @@
 	 6.  [Cast](#Cast)
 	 7.  [SmartCast](#SmartCast)
  5.  [Exceptions](#Exceptions)
-	 6.  [Own Exceptions](#OwnExceptions)
+	 6.  [Own Exceptions](#own-exception)
 	 
 
 ### Variáveis
