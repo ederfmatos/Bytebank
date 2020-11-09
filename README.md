@@ -1,20 +1,42 @@
 
-# Bytebank
+# Meus estudos sobre Kotlin
 
 ##  Sumário
 
  1. [Variáveis](#Variáveis)<br>
 	 2. [Mutáveis](#Mutáveis)<br>
 	 3. [Imutáveis](#Imutáveis)<br>
- 2. Importações
+ 2. [Importações](#importacoes)
 	 3. [Alias](#Alias)	
- 3. [Init](#Init)	
- 4. [Casting](#Casting)	
-	 5. [Is](#Is)
-	 6.  [Cast](#Cast)
-	 7.  [SmartCast](#SmartCast)
- 5.  [Exceptions](#Exceptions)
-	 6.  [Own Exceptions](#own-exception)
+ 3. [Init](#Init)
+ 4. [Casting](#Casting)<br>	
+	 5. [Is](#Is)<br>
+	 6. [Cast](#Cast<br>)
+	 7. [SmartCast](#SmartCast)<br>
+ 5.  [Exceptions](#Exceptions)<br>
+	 6. [Own Exceptions](#own-exception)<br>
+	 7. [Try is an expression](#try-is-an-expression)<br>
+	 8. [If is an expression](#if-is-an-expression)<br>
+	 8. [When is an expression](#when-is-an-expression)
+ 6.  [Null Safety](#null-safety)<br>
+	 7. [Non null assertion operator](#non-null-assertion-operator)<br>
+	 8. [Elvis Operator](#elvis-operator)<br>
+	 9. [Safe casts](#safe-casts)<br>
+ 7.  [Arrays](#arrays)<br>
+	 8. [Percorrendo arrays](#percorrendo-arrays)<br>
+	 9. [Percorrendo indices de arrays](#percorrendo-indices-de-arrays)<br>
+	 10. [Range](#range)<br>
+	 11. [Arrays contains](#arrays-contains)<br>
+	 12. [Obter valor máximo](#obter-valor-máximo)<br>
+	 13. [Obter valor mínimo](#obter-valor-mínimo)<br>
+	 14. [Obter média de valores](#obter-média-de-valores)<br>
+	 15. [Verificar se todos os valores condiz com uma condição](#verificar-se-todos-os-valores-condiz-com-uma-condição)<br>
+	 16. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-ao-menos-1-valor-condiz-com-uma-condição)<br>
+	 17. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
+	 18. [Verificar se nenhum valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
+	 19. [Filtrar array](#filtrar-array)<br>
+	 20. [Buscar o primeiro item de acordo com condição](#buscar-o-primeiro-item-de-acordo-com-condição)<br>
+	 
 	 
 
 ### Variáveis
@@ -78,7 +100,7 @@ Exemplo:
 ```kotlin
 fun print(value: Any) {
     if (value is Customer) {
-    // ... Segue
+        println(value.name)
     }
 }
 ``` 
@@ -221,7 +243,7 @@ test("não é um número")
 val ages = intArrayOf(10,11,23,25,64)
 
 for (age in ages) {
-    
+    println(age)
 }
 ```
 
