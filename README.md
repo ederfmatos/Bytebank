@@ -219,3 +219,18 @@ val ages = intArrayOf(10,11,23,25,64)
 
 ages.forEach { println(it) }
 ```
+
+##### Percorrendo indices de arrays
+```kotlin
+val ages = intArrayOf(10,11,23,25,64)
+
+for (index in ages.indices) {
+    val age = ages[index]
+    println(age)
+}
+```
+
+```kotlin
+val ages = intArrayOf(10,11,23,25,64)
+ages.forEachIndexed { index, age -> println(age) }
+```

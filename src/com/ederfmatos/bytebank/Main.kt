@@ -18,9 +18,5 @@ fun main() {
 
     val ages = intArrayOf(15,13,18,19,24,35,44,26)
     println("A maior idade é: ${ages.max()}")
-
-    ages.forEach { age: Int ->
-        println(age)
-    }
 }
 
