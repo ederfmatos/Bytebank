@@ -265,5 +265,68 @@ val alphabet =  'a'..'z'
 if ('k' in alphabet) {
     println("Está dentro do alfabeto")
 }
- 
+```
+
+#### Obter valor máximo
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.max())
+
+// -> 35
+```
+
+#### Obter valor mínimo
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.min())
+
+// -> 12
+```
+
+#### Obter média de valores
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.average())
+
+// -> 20.5
+```
+
+#### Verificar se todos os valores condiz com uma condição
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.all { it >= 18 })
+
+// -> false
+```
+
+#### Verificar se ao menos 1 valor condiz com uma condição
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.any { it >= 18 })
+
+// -> true
+```
+
+#### Verificar se nenhum valor condiz com uma condição
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.none { it == 19 })
+
+// -> true
+```
+
+#### Filtrar array
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.filter { it >= 18 })
+
+// -> [26, 35, 18, 22, 24]
+```
+
+#### Buscar o primeiro item de acordo com condição
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+println(ages.find { it >= 18 })
+
+// -> 26
 ```

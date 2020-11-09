@@ -16,5 +16,7 @@ fun main() {
 //    val customer: Customer? = null
 //    println(customer?.address?.city?.length)
 
+    val ages: IntArray = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+    println(ages.find { it >= 18 })
 }
 
