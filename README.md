@@ -3,9 +3,9 @@
 
 ##  Sumário
 
- 1. [Variáveis](#Variáveis)
-	 2. [Mutáveis](#Mutáveis)	
-	 3. [Imutáveis](#Imutáveis)	
+ 1. [Variáveis](#Variáveis)<br>
+	 2. [Mutáveis](#Mutáveis)<br>
+	 3. [Imutáveis](#Imutáveis)<br>
  2. Importações
 	 3. [Alias](#Alias)	
  3. [Init](#Init)	
