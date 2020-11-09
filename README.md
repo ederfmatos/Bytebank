@@ -195,3 +195,27 @@ test("não é um número")
 
 // -> null
 ```
+
+
+### Arrays
+
+#### Percorrendo arrays
+```kotlin
+val ages = intArrayOf(10,11,23,25,64)
+
+for (age in ages) {
+    
+}
+```
+
+```kotlin
+val ages = intArrayOf(10,11,23,25,64)
+
+ages.forEach { age: Int -> println(age) }
+```
+
+```kotlin
+val ages = intArrayOf(10,11,23,25,64)
+
+ages.forEach { println(it) }
+```

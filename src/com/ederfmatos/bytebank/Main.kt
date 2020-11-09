@@ -1,12 +1,5 @@
 package com.ederfmatos.bytebank
 
-import com.ederfmatos.bytebank.functions.forLoops
-import com.ederfmatos.bytebank.functions.testAuthentication
-import com.ederfmatos.bytebank.functions.testDifferentAccounts
-import com.ederfmatos.bytebank.functions.testEmployees
-import com.ederfmatos.bytebank.model.Customer
-import com.ederfmatos.bytebank.model.account.Account
-
 fun main() {
 //    println("Hello World")
 //
@@ -20,7 +13,14 @@ fun main() {
 //
 //    println("O número de contas criadas é de ${Account.total}")
 
-    val customer: Customer? = null
-    println(customer?.address?.city?.length)
+//    val customer: Customer? = null
+//    println(customer?.address?.city?.length)
+
+    val ages = intArrayOf(15,13,18,19,24,35,44,26)
+    println("A maior idade é: ${ages.max()}")
+
+    ages.forEach { age: Int ->
+        println(age)
+    }
 }
 
