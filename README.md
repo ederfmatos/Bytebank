@@ -107,6 +107,15 @@ try {
 }
 ```
 
+#### Own Exception
+```kotlin
+class InsufficientFundsException : Exception(message = "Saldo insuficiente")
+
+fun test() {
+    throw InsufficientFundsException() 
+}
+```
+
 #### Try is an expression
 
 ```kotlin
