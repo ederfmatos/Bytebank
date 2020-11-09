@@ -1,5 +1,6 @@
 package com.ederfmatos.bytebank.functions
 
+import com.ederfmatos.bytebank.exceptions.InsufficientFundsException
 import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.account.SavingAccount
 
@@ -20,8 +21,14 @@ fun forLoops() {
         println(account)
         account.withdraw(48.0)
         println(account)
-        account.withdraw(148.0)
-        println(account)
+
+        try {
+            account.withdraw(148.0)
+            println("Transferencia realizada com sucesso")
+        } catch (e: InsufficientFundsException) {
+            e.printStackTrace()
+            println("Saldo insuficiente")
+        }
 
         val customer2 = Customer(name = "Toroxa", cpf = "123456789", password = "123456")
         val account2 = SavingAccount(number = 75, owner = customer2)
