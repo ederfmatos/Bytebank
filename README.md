@@ -4,39 +4,38 @@
 ##  Sumário
 
  1. [Variáveis](#Variáveis)<br>
-	 2. [Mutáveis](#Mutáveis)<br>
-	 3. [Imutáveis](#Imutáveis)<br>
+	 1. [Mutáveis](#Mutáveis)<br>
+	 2. [Imutáveis](#Imutáveis)<br>
  2. [Importações](#importacoes)<br>	
-	 3. [Alias](#Alias)	
+	 1. [Alias](#Alias)	
  3. [Init](#Init)
  4. [Casting](#Casting)<br>	
-	 5. [Is](#Is)<br>
-	 6. [Cast](#Cast<br>)
-	 7. [SmartCast](#SmartCast)<br>
+	 1. [Is](#Is)<br>
+	 2. [Cast](#Cast<br>)
+	 3. [SmartCast](#SmartCast)<br>
  5.  [Exceptions](#Exceptions)<br>
-	 6. [Own Exceptions](#own-exception)<br>
-	 7. [Try is an expression](#try-is-an-expression)<br>
-	 8. [If is an expression](#if-is-an-expression)<br>
-	 8. [When is an expression](#when-is-an-expression)
+	 1. [Own Exceptions](#own-exception)<br>
+	 2. [Try is an expression](#try-is-an-expression)<br>
+	 3. [If is an expression](#if-is-an-expression)<br>
+	 4. [When is an expression](#when-is-an-expression)
  6.  [Null Safety](#null-safety)<br>
-	 7. [Non null assertion operator](#non-null-assertion-operator)<br>
-	 8. [Elvis Operator](#elvis-operator)<br>
-	 9. [Safe casts](#safe-casts)<br>
+	 1. [Non null assertion operator](#non-null-assertion-operator)<br>
+	 2. [Elvis Operator](#elvis-operator)<br>
+	 3. [Safe casts](#safe-casts)<br>
  7.  [Arrays](#arrays)<br>
-	 8. [Percorrendo arrays](#percorrendo-arrays)<br>
-	 9. [Percorrendo indices de arrays](#percorrendo-indices-de-arrays)<br>
-	 10. [Range](#range)<br>
-	 11. [Arrays contains](#arrays-contains)<br>
-	 12. [Obter valor máximo](#obter-valor-máximo)<br>
-	 13. [Obter valor mínimo](#obter-valor-mínimo)<br>
-	 14. [Obter média de valores](#obter-média-de-valores)<br>
-	 15. [Verificar se todos os valores condiz com uma condição](#verificar-se-todos-os-valores-condiz-com-uma-condição)<br>
-	 16. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-ao-menos-1-valor-condiz-com-uma-condição)<br>
-	 17. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
-	 18. [Verificar se nenhum valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
-	 19. [Filtrar array](#filtrar-array)<br>
-	 20. [Buscar o primeiro item de acordo com condição](#buscar-o-primeiro-item-de-acordo-com-condição)<br>
-	 
+	 1. [Percorrendo arrays](#percorrendo-arrays)<br>
+	 2. [Percorrendo indices de arrays](#percorrendo-indices-de-arrays)<br>
+	 1. [Range](#range)<br>
+	 2. [Arrays contains](#arrays-contains)<br>
+	 3. [Obter valor máximo](#obter-valor-máximo)<br>
+	 4. [Obter valor mínimo](#obter-valor-mínimo)<br>
+	 5. [Obter média de valores](#obter-média-de-valores)<br>
+	 6. [Verificar se todos os valores condiz com uma condição](#verificar-se-todos-os-valores-condiz-com-uma-condição)<br>
+	 7. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-ao-menos-1-valor-condiz-com-uma-condição)<br>
+	 8. [Verificar se ao menos 1 valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
+	 9. [Verificar se nenhum valor condiz com uma condição](#verificar-se-nenhum-valor-condiz-com-uma-condição)<br>
+	 10. [Filtrar array](#filtrar-array)<br>
+	 11. [Buscar o primeiro item de acordo com condição](#buscar-o-primeiro-item-de-acordo-com-condição)<br>
 	 
 
 ### Variáveis
