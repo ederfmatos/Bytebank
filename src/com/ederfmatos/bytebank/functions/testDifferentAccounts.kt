@@ -1,5 +1,6 @@
 package com.ederfmatos.bytebank.functions
 
+import com.ederfmatos.bytebank.exceptions.InvalidValueException
 import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.account.Account
 import com.ederfmatos.bytebank.model.account.CheckingAccount
@@ -22,6 +23,13 @@ fun testDifferentAccounts() {
 
     checkingAccount.withdraw(100.0)
     savingAccount.withdraw(100.0)
+
+    try {
+        savingAccount.withdraw(-1.0)
+    } catch(e: InvalidValueException) {
+        e.printStackTrace()
+        println("Valor inválido")
+    }
 
     println("Saldo após saque da conta corrente $checkingAccount")
     println("Saldo após saque da conta poupança $savingAccount")
