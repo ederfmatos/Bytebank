@@ -234,3 +234,36 @@ for (index in ages.indices) {
 val ages = intArrayOf(10,11,23,25,64)
 ages.forEachIndexed { index, age -> println(age) }
 ```
+
+#### Range
+```kotlin
+1.rangeTo(10).forEach { println(it) }
+
+val numerosPares = 0..100 step 2
+numerosPares.forEach{ println(it) }
+
+val numerosParesUntil = 2.until(100)
+numerosParesUntil.forEach{ println(it) }
+
+val cemAteZero = 100 downTo 0
+cemAteZero.forEach{ println(it) }
+
+val valores = 1500..5000
+valores.forEach{ println(it) }
+```
+
+#### Arrays contains
+```kotlin
+val numerosParesUntil = 2.until(100)
+val numero = 18
+
+if (numero in numerosParesUntil) {
+    println("Está dentro do intervalo")
+}
+
+val alphabet =  'a'..'z'
+if ('k' in alphabet) {
+    println("Está dentro do alfabeto")
+}
+ 
+```
