@@ -4,19 +4,23 @@ import com.ederfmatos.bytebank.functions.forLoops
 import com.ederfmatos.bytebank.functions.testAuthentication
 import com.ederfmatos.bytebank.functions.testDifferentAccounts
 import com.ederfmatos.bytebank.functions.testEmployees
+import com.ederfmatos.bytebank.model.Customer
 import com.ederfmatos.bytebank.model.account.Account
 
 fun main() {
-    println("Hello World")
+//    println("Hello World")
+//
+//    forLoops()
+//
+//    testEmployees()
+//
+//    testDifferentAccounts()
+//
+//    testAuthentication()
+//
+//    println("O número de contas criadas é de ${Account.total}")
 
-    forLoops()
-
-    testEmployees()
-
-    testDifferentAccounts()
-
-    testAuthentication()
-
-    println("O número de contas criadas é de ${Account.total}")
+    val customer: Customer? = null
+    println(customer?.address?.city?.length)
 }
 

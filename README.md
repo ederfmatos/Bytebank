@@ -144,3 +144,54 @@ val valorComTaxa: Double? = when {
     else -> null
 }
 ```
+
+### Null Safety
+
+Pode ser nulo
+```kotlin
+val customer: Customer? = null
+println(customer?.address.toString().toUpperCase())
+```
+
+Não pode ser nulo
+```kotlin
+val customer: Customer = Customer()
+println(customer.address.toString().toUpperCase())
+```
+
+#### Non null assertion operator
+
+Garante que a variavel não será nula
+```kotlin
+val customer: Customer? = null
+println(customer!!.address.toString().toUpperCase())
+```
+
+#### Elvis Operator
+```kotlin
+val value = null
+val value2 = value ?: 1
+println(value2)
+
+// -> 1 
+```
+
+```kotlin
+val value = null
+val value2 = value ?: throw IllegalStateException()
+println(value2)
+
+// -> java.lang.IllegalStateException
+```
+
+#### Safe casts
+```kotlin
+fun test(value: Any) {
+    val number: Int? = value as? Int
+    println(number)
+}
+
+test("não é um número")
+
+// -> null
+```
