@@ -38,6 +38,7 @@
 	 11. [Buscar o primeiro item de acordo com condição](#buscar-o-primeiro-item-de-acordo-com-condição)<br>
 	 12. [Criar Array de objetos](#criar-array-de-objetos)<br>
 	 13. [Map](#map)<br>
+	 14. [Reduce](#reduce)<br>
 	 
 
 ### Variáveis
@@ -383,4 +384,9 @@ val salarios = bigDecimalArrayOf("1500.19", "4850.50", "3200.00", "4420.00", "32
 #### Map
 ```kotlin
 val salariosComAumento = salarios.map{ salario -> salario * aumento }.toTypedArray()
+```
+
+#### Reduce
+```kotlin
+val soma: BigDecimal = salarios.reduce { it, accum -> it.plus(accum) }
 ```

@@ -33,7 +33,11 @@ fun main() {
                 novoSalario
             }
             .toTypedArray()
+
+    val soma: BigDecimal = salarioComAumento.reduce { it, accum -> it.plus(accum) }
+
     println(salarioComAumento.contentToString())
+    println("A soma doa salários é $soma")
 }
 
 fun bigDecimalArrayOf(vararg values: String): Array<BigDecimal> {
