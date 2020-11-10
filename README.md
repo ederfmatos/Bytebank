@@ -51,6 +51,7 @@
     7. [FilterNotNull](#filternotnull)<br>
     8. [Map](#map---transformando-arrays)<br>
     9. [MapNotNull](#map-not-null)<br>
+    10. [GroupBy](#groupby)<br>
 	 
 
 ### Variáveis
@@ -491,5 +492,16 @@ println(values)
 
 // -> [2, 4, 6]
 ```
+
+#### GroupBy
+Transforma objetos desde que não sejam nulos
+```kotlin
+val list: List<Int?> = listOf(1, null, 2, 3)
+val values = list.mapNotNull { it * 2 }
+println(values)
+
+// -> [2, 4, 6]
+```
+
 
 

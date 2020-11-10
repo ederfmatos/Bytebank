@@ -17,8 +17,10 @@ fun bookTest() {
 
 //    val nullableList: List<String?> = books.mapNotNull { it.publishCompany }
 //    println(nullableList)
-    val list = listOf(1,2,3, null)
-    println(list)
+
+    books.groupBy { it.publishCompany }.forEach { (editora, livros) -> println("""
+        A editora $editora tem os livros $livros
+    """.trimIndent()) }
 }
 
 fun List<Book>.printFormat() {
