@@ -11,7 +11,9 @@ fun bookTest() {
     val books: MutableList<Book> = mutableListOf(book1, book2, book3, book4)
     books.add(Book(title = "Livro 05", author = "Autor 4", yearPublish = 2015, publishCompany = "Editora 3"))
 
-    books.sortedByDescending { it.yearPublish }.printFormat()
+//    books.sortedByDescending { it.yearPublish }.printFormat()
+//    books.filter { it.yearPublish > 2010 }.printFormat()
+//    books.filterNot { it.yearPublish > 2010 }.printFormat()
 }
 
 fun List<Book>.printFormat() {

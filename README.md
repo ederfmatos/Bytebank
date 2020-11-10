@@ -46,6 +46,9 @@
     2. [Join To String](#jointostring)<br>
     3. [Ordenando listas crescente](#sortedby)<br>
     4. [Ordenando listas decrescente](#sortedbydescending)<br>
+    5. [Filter](#filter)<br>
+    6. [FilterNot](#filternot)<br>
+    7. [Map](#map---transformando-arrays)<br>
 	 
 
 ### Variáveis
@@ -446,4 +449,24 @@ books.sortedBy { it.yearPublish }
 ```kotlin
 val books = listOf<Book>()
 books.sortedByDescending { it.yearPublish }
+```
+
+#### Filter
+```kotlin
+val books = listOf<Book>()
+books.filter { it.yearPublish > 2010 }
+```
+
+#### FilterNot
+Filtra pelos itens que não satisfazem a condição
+```kotlin
+val books = listOf<Book>()
+books.filter { it.yearPublish > 2010 }
+```
+
+#### Map - transformando arrays
+Filtra pelos itens que não satisfazem a condição
+```kotlin
+val books = listOf<Book>()
+val titles: List<String> = books.map( it.title )
 ```
