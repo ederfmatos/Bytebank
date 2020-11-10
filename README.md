@@ -41,6 +41,8 @@
 	 14. [Reduce](#reduce)<br>
 	 15. [Take - Obtendo os primeiros itens de um array](#take---obtendo-os-primeiros-itens-de-um-array)<br>
 	 16. [TakeLast - Obtendo os ultimos itens de um array](#takelast---obtendo-os-ultimos-itens-de-um-array)<br>
+ 8. [Listas](#listas)<br>
+    1. [Listas mutáveis](#mutablelist)<br>
 	 
 
 ### Variáveis
@@ -409,4 +411,24 @@ val lastAges: List<Int> = ages.takeLast(3)
 println(lastAges)
 
 // -> [22, 24, 13]
+```
+
+### Listas
+
+#### MutableList
+```kotlin
+val books: MutableList<Int> = mutableListOf(1, 2, 3, 4)
+books.add(5)
+println(books)
+
+// -> [1, 2, 3, 4, 5]
+```
+
+#### JoinToString
+```kotlin
+val books: MutableList<Int> = mutableListOf(1, 2, 3, 4)
+books.add(5)
+println(books)
+
+// -> [1, 2, 3, 4, 5]
 ```
