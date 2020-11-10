@@ -43,6 +43,9 @@
 	 16. [TakeLast - Obtendo os ultimos itens de um array](#takelast---obtendo-os-ultimos-itens-de-um-array)<br>
  8. [Listas](#listas)<br>
     1. [Listas mutáveis](#mutablelist)<br>
+    2. [Join To String](#jointostring)<br>
+    3. [Ordenando listas crescente](#sortedby)<br>
+    4. [Ordenando listas decrescente](#sortedbydescending)<br>
 	 
 
 ### Variáveis
@@ -431,4 +434,16 @@ books.add(5)
 println(books)
 
 // -> [1, 2, 3, 4, 5]
+```
+
+#### SortedBy
+```kotlin
+val books = listOf<Book>()
+books.sortedBy { it.yearPublish }
+```
+
+#### SortedByDescending
+```kotlin
+val books = listOf<Book>()
+books.sortedByDescending { it.yearPublish }
 ```

@@ -10,10 +10,11 @@ fun bookTest() {
 
     val books: MutableList<Book> = mutableListOf(book1, book2, book3, book4)
     books.add(Book(title = "Livro 05", author = "Autor 4", yearPublish = 2015, publishCompany = "Editora 3"))
-    books.printFormat()
+
+    books.sortedByDescending { it.yearPublish }.printFormat()
 }
 
-fun MutableList<Book>.printFormat() {
+fun List<Book>.printFormat() {
     val formattedBook = this.joinToString(separator = "\n") {
         """
         (            
