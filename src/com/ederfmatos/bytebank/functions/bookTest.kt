@@ -14,6 +14,11 @@ fun bookTest() {
 //    books.sortedByDescending { it.yearPublish }.printFormat()
 //    books.filter { it.yearPublish > 2010 }.printFormat()
 //    books.filterNot { it.yearPublish > 2010 }.printFormat()
+
+//    val nullableList: List<String?> = books.mapNotNull { it.publishCompany }
+//    println(nullableList)
+    val list = listOf(1,2,3, null)
+    println(list)
 }
 
 fun List<Book>.printFormat() {

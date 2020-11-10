@@ -48,7 +48,9 @@
     4. [Ordenando listas decrescente](#sortedbydescending)<br>
     5. [Filter](#filter)<br>
     6. [FilterNot](#filternot)<br>
-    7. [Map](#map---transformando-arrays)<br>
+    7. [FilterNotNull](#filternotnull)<br>
+    8. [Map](#map---transformando-arrays)<br>
+    9. [MapNotNull](#map-not-null)<br>
 	 
 
 ### Variáveis
@@ -464,9 +466,30 @@ val books = listOf<Book>()
 books.filter { it.yearPublish > 2010 }
 ```
 
+#### FilterNotNull
+Filtra pelos itens que não sejam nulos
+```kotlin
+val list = listOf(1,2,3, null)
+println(list.filterNotNull())
+
+// -> [1, 2, 3]
+```
+
 #### Map - transformando arrays
 Filtra pelos itens que não satisfazem a condição
 ```kotlin
 val books = listOf<Book>()
 val titles: List<String> = books.map( it.title )
 ```
+
+#### Map Not Null
+Transforma objetos desde que não sejam nulos
+```kotlin
+val list: List<Int?> = listOf(1, null, 2, 3)
+val values = list.mapNotNull { it * 2 }
+println(values)
+
+// -> [2, 4, 6]
+```
+
+
