@@ -39,6 +39,8 @@
 	 12. [Criar Array de objetos](#criar-array-de-objetos)<br>
 	 13. [Map](#map)<br>
 	 14. [Reduce](#reduce)<br>
+	 15. [Take - Obtendo os primeiros itens de um array](#take---obtendo-os-primeiros-itens-de-um-array)<br>
+	 16. [TakeLast - Obtendo os ultimos itens de um array](#takelast---obtendo-os-ultimos-itens-de-um-array)<br>
 	 
 
 ### Variáveis
@@ -389,4 +391,22 @@ val salariosComAumento = salarios.map{ salario -> salario * aumento }.toTypedArr
 #### Reduce
 ```kotlin
 val soma: BigDecimal = salarios.reduce { it, accum -> it.plus(accum) }
+```
+
+#### Take - Obtendo os primeiros itens de um array
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+val initialsAges: List<Int> = ages.take(3)
+println(lastAges)
+
+// -> [14, 26, 35]
+```
+
+#### TakeLast - Obtendo os ultimos itens de um array
+```kotlin
+val ages = intArrayOf(14, 26, 35, 12, 18, 22, 24, 13)
+val lastAges: List<Int> = ages.takeLast(3)
+println(lastAges)
+
+// -> [22, 24, 13]
 ```
